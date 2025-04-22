@@ -135,13 +135,14 @@ body{
     max-width: 50vw;
 }
 .--content-h2{
-    font-size: 5vw;
+    font-size: 3rem;
+    width: 80%;
     font-family: var(--font-opc);
     text-shadow: white 1px 5px 1px;
     margin: 10px;
-    white-space: nowrap;
     text-align: center;
     background-color: var(--content-bk);
+    border-radius: 50px;
 }
 
 .--content-text-p{
@@ -169,10 +170,21 @@ body{
     .--content-text{
         min-width: 100%;
     }
+    .--content-text-p{
+        font-size: 2rem;
+        text-align: center;
+    }
+
     .--content-img{
         max-width: 100%;
     }
 
+}
+
+#trabajo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #trabajo .content{
     flex-flow: row wrap;
@@ -230,7 +242,9 @@ body{
 }
 
 #servicio{
-   flex:1;
+   display: flex;
+    flex-direction: column;
+   align-items: center;
 }
 #servicio .content{
     display: flex;
@@ -252,14 +266,15 @@ body{
     #servicio .content{
         width: 80vw;
         height: auto;
-        flex-direction: column;
-    }
+        flex-direction: column-reverse; 
+       }
     #servicio .content .--content-text-p{
         font-size: 2rem;
         text-align: center;
         }
 }
 /*FORMULARIO*/
+
 #contacto{
     display: flex;
     flex-direction: column;
@@ -290,9 +305,16 @@ body{
     width: 20vw;
 }
 @media (max-width: 800px) {
+    #contacto{
+        display: flex;
+        flex-direction: row;
+    }
     .row{
         flex-direction: column;
+        align-items: center;
+        align-content: center;
     }
+
     #contacto .content{
         width: 90vw;
         height: auto;
@@ -364,7 +386,7 @@ body{
         bottom: 5px
     }
     .--footer-img{
-        width: 5vw;
+        width: 7vw;
 
     }
 }
