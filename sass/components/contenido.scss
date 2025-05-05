@@ -1,0 +1,23 @@
+.content {
+  display: flex;
+  margin: 0px 100px;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+
+  text {
+    max-width: 50vw;
+  }
+
+  img {
+    margin-left: 10px;
+    max-width: 40vw;
+  }
+  .--content-text-p {
+    font-size: 1.5rem;
+    margin: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+  }
+}

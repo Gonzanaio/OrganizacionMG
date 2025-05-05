@@ -1,0 +1,71 @@
+#quien {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  .content {
+    flex-direction: row;
+    background-color: #527853;
+    margin: 0px;
+    h2 {
+      font-size: 5rem;
+      margin: 10px;
+      text-align: center;
+      text-justify: inter-word;
+      color: white;
+      background-color: rgba(255, 255, 255, 0);
+      text-shadow: 0px 0px 5px #00000000;
+      width: 50%;
+    }
+  }
+  .text-p {
+    font-size: 2rem;
+    margin: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+    color: white;
+    width: 80%;
+  }
+  .imagen {
+    width: 100%;
+    .--content-img-container {
+      width: 100%;
+      .--content-img {
+        border-radius: 50%;
+        margin: 0px;
+        min-width: 100%;
+        box-shadow: 10px 10px 10px 10px #00000061;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  #quien {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 0;
+    .content {
+      flex-direction: column;
+      .text-p {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 5rem;
+        margin: 10px;
+        text-align: center;
+        text-justify: inter-word;
+        color: white;
+        background-color: rgba(255, 255, 255, 0);
+        text-shadow: 0px 0px 5px #00000000;
+      }
+      .imagen {
+        width: 90%;
+        .--content-img {
+          border-radius: 50%;
+          min-width: 100%;
+        }
+      }
+    }
+  }
+}

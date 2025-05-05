@@ -1,0 +1,40 @@
+body {
+  background-color: #ee7214;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+p {
+  font-family: var(--font-opc);
+}
+h2 {
+  font-size: 2rem;
+}
+.main-menu {
+  flex: 1;
+  h2 {
+    font-size: 5rem;
+    width: 80%;
+    font-family: var(--font-opc);
+    color: white;
+    margin: 0px;
+    text-align: center;
+    border-radius: 50px;
+  }
+}
+.titulo {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+  color: var(--nav-text);
+  background-color: #ee7214;
+
+  .--titulo-h1 {
+    font-size: 5rem;
+  }
+  .--titulo-h2 {
+    font-size: 2rem;
+    margin: 0px 4rem 20px;
+  }
+}
